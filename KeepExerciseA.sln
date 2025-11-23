@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeepExerciseA", "KeepExerciseA\KeepExerciseA.csproj", "{AF7BE1F1-363F-4E1D-884F-E2B66AE285B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeepExerciseA.Library", "KeepExerciseA.Library\KeepExerciseA.Library.csproj", "{EDDC95CA-BBFD-4C29-877A-92E0D8FFE9BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeepExerciseA.UnitTest", "KeepExerciseA.UnitTest\KeepExerciseA.UnitTest.csproj", "{4FAFE413-87D0-4813-8FFD-630BEA102F24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF7BE1F1-363F-4E1D-884F-E2B66AE285B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7BE1F1-363F-4E1D-884F-E2B66AE285B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7BE1F1-363F-4E1D-884F-E2B66AE285B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7BE1F1-363F-4E1D-884F-E2B66AE285B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDDC95CA-BBFD-4C29-877A-92E0D8FFE9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDDC95CA-BBFD-4C29-877A-92E0D8FFE9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDDC95CA-BBFD-4C29-877A-92E0D8FFE9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDDC95CA-BBFD-4C29-877A-92E0D8FFE9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAFE413-87D0-4813-8FFD-630BEA102F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAFE413-87D0-4813-8FFD-630BEA102F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAFE413-87D0-4813-8FFD-630BEA102F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAFE413-87D0-4813-8FFD-630BEA102F24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

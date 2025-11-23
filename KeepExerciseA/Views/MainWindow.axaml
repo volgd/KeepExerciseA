@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:KeepExerciseA.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ais="using:AvaloniaInfiniteScrolling"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="KeepExerciseA.Views.MainWindow"
+       
+        Icon="/Assets/avalonia-logo.ico"
+        Title="KeepExerciseA">
+
+        <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <ais:AvaloniaInfiniteScrollControl Grid.Row="0"
+                                                   ItemsSource="{Binding ExerciseTipsCollection}">
+                        <ais:AvaloniaInfiniteScrollControl.ItemTemplate>
+                                <DataTemplate>
+                                        <TextBlock Text="{Binding content}"></TextBlock>
+                                </DataTemplate>
+                        </ais:AvaloniaInfiniteScrollControl.ItemTemplate>
+                </ais:AvaloniaInfiniteScrollControl>
+                <TextBlock Grid.Row="1" Text="{Binding Status}"></TextBlock>
+        </Grid>
+
+</Window>

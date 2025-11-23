@@ -1,0 +1,13 @@
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\bin\Debug\net8.0\KeepExerciseA.Library.deps.json
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\bin\Debug\net8.0\KeepExerciseA.Library.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\bin\Debug\net8.0\KeepExerciseA.Library.pdb
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.csproj.AssemblyReference.cache
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.GeneratedMSBuildEditorConfig.editorconfig
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.AssemblyInfoInputs.cache
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.AssemblyInfo.cs
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.csproj.CoreCompileInputs.cache
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\refint\KeepExerciseA.Library.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.pdb
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\ref\KeepExerciseA.Library.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\KeepExerciseA.Library.sourcelink.json
