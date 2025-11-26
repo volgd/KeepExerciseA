@@ -28,9 +28,9 @@ public class JinriTipServices(IAlertServices _alertServices,IExerciseTipsStorage
                 model = "doubao-seed-1-6-251015",  // 根据实际模型调整
                 messages = new[]
                 {
-                    new { role = "user", content = "请给我一个部位肌肉的锻炼方法和注意事项" }
+                    new { role = "user", content = "请给我随机一个部位肌肉的锻炼方法和注意事项" }
                 },
-                max_tokens = 2000
+                max_tokens = 500
             };
             var jsonContent = JsonSerializer.Serialize(requestBody);
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
@@ -64,7 +64,7 @@ public class JinriTipServices(IAlertServices _alertServices,IExerciseTipsStorage
         {
             return new TodayExerciseTips
             {
-                Snippet = rootObject?.Choices[0]?.Message?.Content ?? throw new JsonException(),
+                snippet = rootObject?.Choices[0]?.Message?.Content ?? throw new JsonException(),
                 Warning = rootObject?.Choices[0].Message.Reasoning_content ?? throw new JsonException(),
                 Content = string.Join("\n", rootObject?.Choices[0].Message?.Content ?? throw new JsonException())
             };
@@ -85,7 +85,7 @@ public class JinriTipServices(IAlertServices _alertServices,IExerciseTipsStorage
         var exerciseTip = exerciseTips.First();
         return new TodayExerciseTips
         {
-            Snippet = exerciseTip.Part,
+            snippet = exerciseTip.Part,
             Aimmuscle = exerciseTip.aimmuscle,
             Content = exerciseTip.content,
             Warning = exerciseTip.precautions
