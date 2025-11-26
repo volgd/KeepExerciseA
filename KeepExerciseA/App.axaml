@@ -22,5 +22,6 @@
             Source="avares://AvaloniaInfiniteScrolling.Control/AvaloniaInfiniteScrollControlStyle.axaml">
         </StyleInclude>
         <semi:SemiTheme Locale="zh-CN"/>
+        <semi:SemiTheme Locale="zh-CN"></semi:SemiTheme>
     </Application.Styles>
 </Application>

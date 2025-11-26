@@ -15,6 +15,8 @@
           "Avalonia.Themes.Fluent": "11.3.4",
           "AvaloniaInfiniteScrolling.Control": "1.0.0",
           "CommunityToolkit.Mvvm": "8.4.0",
+          "Irihi.Ursa": "1.13.0",
+          "Irihi.Ursa.Themes.Semi": "1.13.0",
           "KeepExerciseA.Library": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "9.0.9",
           "Projektanker.Icons.Avalonia.FontAwesome": "9.6.2",
@@ -380,6 +382,50 @@
             "rid": "win-x86",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Irihi.Avalonia.Shared/0.3.1": {
+        "dependencies": {
+          "Avalonia": "11.3.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Irihi.Avalonia.Shared.dll": {
+            "assemblyVersion": "0.3.1.0",
+            "fileVersion": "0.3.1.0"
+          }
+        }
+      },
+      "Irihi.Avalonia.Shared.Contracts/0.3.1": {
+        "runtime": {
+          "lib/netstandard2.0/Irihi.Avalonia.Shared.Contracts.dll": {
+            "assemblyVersion": "0.3.1.0",
+            "fileVersion": "0.3.1.0"
+          }
+        }
+      },
+      "Irihi.Ursa/1.13.0": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Irihi.Avalonia.Shared": "0.3.1",
+          "Irihi.Avalonia.Shared.Contracts": "0.3.1"
+        },
+        "runtime": {
+          "lib/net8.0/Ursa.dll": {
+            "assemblyVersion": "1.13.0.0",
+            "fileVersion": "1.13.0.0"
+          }
+        }
+      },
+      "Irihi.Ursa.Themes.Semi/1.13.0": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Irihi.Ursa": "1.13.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ursa.Themes.Semi.dll": {
+            "assemblyVersion": "1.13.0.0",
+            "fileVersion": "1.13.0.0"
           }
         }
       },
@@ -995,6 +1041,34 @@
       "sha512": "sha512-UsJtQsfAJoFDZrXc4hCUfRPMqccfKZ0iumJ/upcUjz/cmsTgVFGNEL5yaJWmkqsuFYdMWbj/En5/kS4PFl9hBA==",
       "path": "harfbuzzsharp.nativeassets.win32/8.3.1.1",
       "hashPath": "harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512"
+    },
+    "Irihi.Avalonia.Shared/0.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PXFU0NfyrK5y3SJpEH3ipMob/+jGYMW0i2bEgrZEBal1Hc8pwVrMxZOqEwJTui2EzBuVdLj47R832EIPBl6Z8g==",
+      "path": "irihi.avalonia.shared/0.3.1",
+      "hashPath": "irihi.avalonia.shared.0.3.1.nupkg.sha512"
+    },
+    "Irihi.Avalonia.Shared.Contracts/0.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NoxacvvVB97Y3sHet4f8NLFnMw4EXc+XxDxTie4bEe9rhm8u2KXZ/cVw96JPpXtTZcXckHkovP5jiyzQjCL5QA==",
+      "path": "irihi.avalonia.shared.contracts/0.3.1",
+      "hashPath": "irihi.avalonia.shared.contracts.0.3.1.nupkg.sha512"
+    },
+    "Irihi.Ursa/1.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-64djqqpw3slZ/h6du/E95U38X/pDZI3Ed1lLKAKnMuF+AXNv5+f+Q+lbA0BU4Dx8DWzrU88+RRbI+hySO8vxxw==",
+      "path": "irihi.ursa/1.13.0",
+      "hashPath": "irihi.ursa.1.13.0.nupkg.sha512"
+    },
+    "Irihi.Ursa.Themes.Semi/1.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AQdbPwJ+uDodcyIclR5Grg27+C66j/1oqU/HHtoJh3hD0ETIE5uijoSDrnXJII/I/HsAANdIs9kUWGZDoj12Yg==",
+      "path": "irihi.ursa.themes.semi/1.13.0",
+      "hashPath": "irihi.ursa.themes.semi.1.13.0.nupkg.sha512"
     },
     "MicroCom.Runtime/0.11.0": {
       "type": "package",

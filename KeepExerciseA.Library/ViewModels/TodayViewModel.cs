@@ -1,19 +1,40 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
+using KeepExerciseA.Library.Models;
 using KeepExerciseA.Library.Services;
 
 namespace KeepExerciseA.Library.ViewModels;
 
 public class TodayViewModel : ViewModelBase
 {
-    private IContentNavigationSecvices _contentNavigationSecvices;
+    private readonly IContentNavigationSecvices _contentNavigationSecvices;
+    private readonly ITodayExercisesTipServices _todayExercisesTipServices;
 
-    public TodayViewModel(IContentNavigationSecvices contentNavigationSecvices)
+    public TodayViewModel(IContentNavigationSecvices contentNavigationSecvices,
+        ITodayExercisesTipServices todayExercisesTipServices)
     {
+        _todayExercisesTipServices =  todayExercisesTipServices;
         _contentNavigationSecvices = contentNavigationSecvices;
-        
+
+        OnInitializedCommand = new AsyncRelayCommand(OnInitializedAsync);
         ShowDetailCommand = new RelayCommand(ShowDetail);
     }
     public RelayCommand ShowDetailCommand { get; }
+    
+    private TodayExerciseTips _todayExerciseTips;
+
+    public TodayExerciseTips TodayExerciseTips
+    {
+        get => _todayExerciseTips;
+        private set => SetProperty(ref _todayExerciseTips, value);
+    }
+    
+    public ICommand OnInitializedCommand { get; }
+
+    public async Task OnInitializedAsync()
+    {
+        TodayExerciseTips = await _todayExercisesTipServices.GetTodayExerciseTipsAsync();
+    }
 
     public void ShowDetail()
     {

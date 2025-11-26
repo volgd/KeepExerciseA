@@ -1,11 +1,12 @@
-﻿using System.Text;
+﻿using System.Linq.Expressions;
+using System.Text;
 using System.Text.Json;
 using KeepExerciseA.Library.Helpers;
 using KeepExerciseA.Library.Models;
 
 namespace KeepExerciseA.Library.Services;
 
-public class JinriTipServices(IAlertServices _alertServices) : ITodayExercisesTipServices
+public class JinriTipServices(IAlertServices _alertServices,IExerciseTipsStorage _exerciseTipsStorage) : ITodayExercisesTipServices
 {
     private string Apikey = "b3efab1c-102e-4a3c-9a4c-3216c47852e3";
 
@@ -19,7 +20,7 @@ public class JinriTipServices(IAlertServices _alertServices) : ITodayExercisesTi
         httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
         HttpResponseMessage response = new HttpResponseMessage();
-        RootObject rootObject;
+        RootObject rootObject = new RootObject();
         try
         {
             var requestBody = new
@@ -41,6 +42,7 @@ public class JinriTipServices(IAlertServices _alertServices) : ITodayExercisesTi
         {
             await _alertServices.AlertAsync(ErrorMesssageHelper.HttpClientErrorTitle,
                 ErrorMesssageHelper.GetHttpClientError(Server,e.Message));
+            return await GetRandomExerciseTipsAsync();
         }
         var json = await response.Content.ReadAsStringAsync();
         try
@@ -56,11 +58,38 @@ public class JinriTipServices(IAlertServices _alertServices) : ITodayExercisesTi
             await _alertServices.AlertAsync(
                 ErrorMesssageHelper.JsonDeserializationErrorTitle,
                 ErrorMesssageHelper.GetJsonDeserializationError(Server, e.Message));
+            return await GetRandomExerciseTipsAsync();
         }
-        new TodayExerciseTips
+        try
         {
-            Snippet = rootObject.Choices[0]?.Message?.Content?? throw new JsonException(),
+            return new TodayExerciseTips
+            {
+                Snippet = rootObject?.Choices[0]?.Message?.Content ?? throw new JsonException(),
+                Warning = rootObject?.Choices[0].Message.Reasoning_content ?? throw new JsonException(),
+                Content = string.Join("\n", rootObject?.Choices[0].Message?.Content ?? throw new JsonException())
+            };
         }
+        catch (Exception e)
+        {
+            await _alertServices.AlertAsync(
+                ErrorMesssageHelper.JsonDeserializationErrorTitle,
+                ErrorMesssageHelper.GetJsonDeserializationError(Server, e.Message));
+            return await GetRandomExerciseTipsAsync();
+        }
+    }
+
+    public async Task<TodayExerciseTips> GetRandomExerciseTipsAsync()
+    {
+        var exerciseTips = await _exerciseTipsStorage.GetTipsAsync(Expression.Lambda<Func<ExerciseTips,bool>>(Expression.Constant(true),
+            Expression.Parameter(typeof(ExerciseTips),"p")),1,1 );
+        var exerciseTip = exerciseTips.First();
+        return new TodayExerciseTips
+        {
+            Snippet = exerciseTip.Part,
+            Aimmuscle = exerciseTip.aimmuscle,
+            Content = exerciseTip.content,
+            Warning = exerciseTip.precautions
+        };
     }
 }
 

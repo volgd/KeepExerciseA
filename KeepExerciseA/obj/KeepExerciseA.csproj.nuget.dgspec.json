@@ -161,6 +161,14 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
+            "Irihi.Ursa": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
+            "Irihi.Ursa.Themes.Semi": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.9, )"

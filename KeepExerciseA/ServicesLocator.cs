@@ -51,6 +51,8 @@ public class ServicesLocator
 
         serviceCollection.AddSingleton<IPreferenceStorage, FilePreferenceStorage>();
         serviceCollection.AddSingleton<IExerciseTipsStorage, ExerciseTipsStorage>();
+        serviceCollection.AddSingleton<ITodayExercisesTipServices, JinriTipServices>();
+        serviceCollection.AddSingleton<IAlertServices, AlertServicess>();
 
         serviceCollection.AddSingleton<IRootNavigationServices, RootNavigationService>();
         serviceCollection.AddSingleton<IContentNavigationSecvices, ContentNavigationSecvice>();

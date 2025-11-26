@@ -26,6 +26,8 @@ C:\Users\ASUS\.nuget\packages\avaloniainfinitescrolling.collection\1.0.1\lib\net
 C:\Users\ASUS\.nuget\packages\avaloniainfinitescrolling.control\1.0.0\lib\net8.0\AvaloniaInfiniteScrolling.Control.dll
 C:\Users\ASUS\.nuget\packages\communitytoolkit.mvvm\8.4.0\lib\net8.0\CommunityToolkit.Mvvm.dll
 C:\Users\ASUS\.nuget\packages\harfbuzzsharp\8.3.1.1\lib\net8.0\HarfBuzzSharp.dll
+C:\Users\ASUS\.nuget\packages\irihi.avalonia.shared.contracts\0.3.1\lib\netstandard2.0\Irihi.Avalonia.Shared.Contracts.dll
+C:\Users\ASUS\.nuget\packages\irihi.avalonia.shared\0.3.1\lib\netstandard2.0\Irihi.Avalonia.Shared.dll
 E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\ref\KeepExerciseA.Library.dll
 C:\Users\ASUS\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.CSharp.dll
@@ -202,6 +204,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Xml.XPath.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Xml.XPath.XDocument.dll
 C:\Users\ASUS\.nuget\packages\tmds.dbus.protocol\0.21.2\lib\net8.0\Tmds.DBus.Protocol.dll
+C:\Users\ASUS\.nuget\packages\irihi.ursa\1.13.0\lib\net8.0\Ursa.dll
+C:\Users\ASUS\.nuget\packages\irihi.ursa.themes.semi\1.13.0\lib\netstandard2.0\Ursa.Themes.Semi.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\WindowsBase.dll
 C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions.custom\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.Custom.dll
 C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.dll

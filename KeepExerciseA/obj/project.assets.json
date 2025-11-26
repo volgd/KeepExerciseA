@@ -486,6 +486,54 @@
           }
         }
       },
+      "Irihi.Avalonia.Shared/0.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Irihi.Avalonia.Shared.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Irihi.Avalonia.Shared.dll": {}
+        }
+      },
+      "Irihi.Avalonia.Shared.Contracts/0.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Irihi.Avalonia.Shared.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Irihi.Avalonia.Shared.Contracts.dll": {}
+        }
+      },
+      "Irihi.Ursa/1.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.1.1",
+          "Irihi.Avalonia.Shared": "0.3.1",
+          "Irihi.Avalonia.Shared.Contracts": "0.3.1"
+        },
+        "compile": {
+          "lib/net8.0/Ursa.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Ursa.dll": {}
+        }
+      },
+      "Irihi.Ursa.Themes.Semi/1.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.1.1",
+          "Irihi.Ursa": "1.13.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Ursa.Themes.Semi.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Ursa.Themes.Semi.dll": {}
+        }
+      },
       "MicroCom.Runtime/0.11.0": {
         "type": "package",
         "compile": {
@@ -1698,6 +1746,61 @@
         "runtimes/win-x86/native/libHarfBuzzSharp.dll"
       ]
     },
+    "Irihi.Avalonia.Shared/0.3.1": {
+      "sha512": "PXFU0NfyrK5y3SJpEH3ipMob/+jGYMW0i2bEgrZEBal1Hc8pwVrMxZOqEwJTui2EzBuVdLj47R832EIPBl6Z8g==",
+      "type": "package",
+      "path": "irihi.avalonia.shared/0.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "irihi.avalonia.shared.0.3.1.nupkg.sha512",
+        "irihi.avalonia.shared.nuspec",
+        "irihi.png",
+        "lib/netstandard2.0/Irihi.Avalonia.Shared.dll"
+      ]
+    },
+    "Irihi.Avalonia.Shared.Contracts/0.3.1": {
+      "sha512": "NoxacvvVB97Y3sHet4f8NLFnMw4EXc+XxDxTie4bEe9rhm8u2KXZ/cVw96JPpXtTZcXckHkovP5jiyzQjCL5QA==",
+      "type": "package",
+      "path": "irihi.avalonia.shared.contracts/0.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "irihi.avalonia.shared.contracts.0.3.1.nupkg.sha512",
+        "irihi.avalonia.shared.contracts.nuspec",
+        "irihi.png",
+        "lib/netstandard2.0/Irihi.Avalonia.Shared.Contracts.dll"
+      ]
+    },
+    "Irihi.Ursa/1.13.0": {
+      "sha512": "64djqqpw3slZ/h6du/E95U38X/pDZI3Ed1lLKAKnMuF+AXNv5+f+Q+lbA0BU4Dx8DWzrU88+RRbI+hySO8vxxw==",
+      "type": "package",
+      "path": "irihi.ursa/1.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "irihi.png",
+        "irihi.ursa.1.13.0.nupkg.sha512",
+        "irihi.ursa.nuspec",
+        "lib/net8.0/Ursa.dll",
+        "lib/netstandard2.0/Ursa.dll"
+      ]
+    },
+    "Irihi.Ursa.Themes.Semi/1.13.0": {
+      "sha512": "AQdbPwJ+uDodcyIclR5Grg27+C66j/1oqU/HHtoJh3hD0ETIE5uijoSDrnXJII/I/HsAANdIs9kUWGZDoj12Yg==",
+      "type": "package",
+      "path": "irihi.ursa.themes.semi/1.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "irihi.png",
+        "irihi.ursa.themes.semi.1.13.0.nupkg.sha512",
+        "irihi.ursa.themes.semi.nuspec",
+        "lib/netstandard2.0/Ursa.Themes.Semi.dll"
+      ]
+    },
     "MicroCom.Runtime/0.11.0": {
       "sha512": "MEnrZ3UIiH40hjzMDsxrTyi8dtqB5ziv3iBeeU4bXsL/7NLSal9F1lZKpK+tfBRnUoDSdtcW3KufE4yhATOMCA==",
       "type": "package",
@@ -2407,6 +2510,8 @@
       "Avalonia.Themes.Fluent >= 11.3.4",
       "AvaloniaInfiniteScrolling.Control >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.4.0",
+      "Irihi.Ursa >= 1.13.0",
+      "Irihi.Ursa.Themes.Semi >= 1.13.0",
       "KeepExerciseA.Library >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 9.0.9",
       "Projektanker.Icons.Avalonia.FontAwesome >= 9.6.2",
@@ -2495,6 +2600,14 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.4.0, )"
+          },
+          "Irihi.Ursa": {
+            "target": "Package",
+            "version": "[1.13.0, )"
+          },
+          "Irihi.Ursa.Themes.Semi": {
+            "target": "Package",
+            "version": "[1.13.0, )"
           },
           "Microsoft.Extensions.DependencyInjection": {
             "target": "Package",

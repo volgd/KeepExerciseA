@@ -119,3 +119,7 @@ E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Xaml.Behaviors.Inte
 E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Xaml.Behaviors.Interactions.Events.dll
 E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Xaml.Behaviors.Interactions.Responsive.dll
 E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Xaml.Behaviors.Interactivity.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Irihi.Avalonia.Shared.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Irihi.Avalonia.Shared.Contracts.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Ursa.dll
+E:\RiderProject\KeepExerciseA\KeepExerciseA\bin\Debug\net8.0\Ursa.Themes.Semi.dll

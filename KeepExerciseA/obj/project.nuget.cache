@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UVVH9XzLUTw=",
+  "dgSpecHash": "yd5eTXpHViw=",
   "success": true,
   "projectFilePath": "E:\\RiderProject\\KeepExerciseA\\KeepExerciseA\\KeepExerciseA.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,10 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.1.1\\harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\8.3.1.1\\harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\irihi.avalonia.shared\\0.3.1\\irihi.avalonia.shared.0.3.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\irihi.avalonia.shared.contracts\\0.3.1\\irihi.avalonia.shared.contracts.0.3.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\irihi.ursa\\1.13.0\\irihi.ursa.1.13.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\irihi.ursa.themes.semi\\1.13.0\\irihi.ursa.themes.semi.1.13.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.9\\microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
