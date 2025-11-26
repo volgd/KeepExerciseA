@@ -160,6 +160,22 @@
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.4.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Projektanker.Icons.Avalonia.FontAwesome": {
+              "target": "Package",
+              "version": "[9.6.2, )"
+            },
+            "Semi.Avalonia": {
+              "target": "Package",
+              "version": "[11.2.1.10, )"
+            },
+            "Xaml.Behaviors.Avalonia": {
+              "target": "Package",
+              "version": "[11.3.2, )"
             }
           },
           "imports": [

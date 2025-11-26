@@ -29,5 +29,20 @@ build_property.EnableCodeStyleSeverity =
 [E:/RiderProject/KeepExerciseA/KeepExerciseA/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/InitializationView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/MainView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/QueryView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/TodayDetailView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/TodayView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

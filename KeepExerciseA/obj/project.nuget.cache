@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H/rgirq1RJs=",
+  "dgSpecHash": "UVVH9XzLUTw=",
   "success": true,
   "projectFilePath": "E:\\RiderProject\\KeepExerciseA\\KeepExerciseA\\KeepExerciseA.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,11 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\8.3.1.1\\harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.9\\microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\projektanker.icons.avalonia\\9.6.2\\projektanker.icons.avalonia.9.6.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\projektanker.icons.avalonia.fontawesome\\9.6.2\\projektanker.icons.avalonia.fontawesome.9.6.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\semi.avalonia\\11.2.1.10\\semi.avalonia.11.2.1.10.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
@@ -38,9 +43,19 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.2\\sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.io.pipelines\\9.0.4\\system.io.pipelines.9.0.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.text.encodings.web\\9.0.4\\system.text.encodings.web.9.0.4.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\system.text.json\\9.0.4\\system.text.json.9.0.4.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.avalonia\\11.3.2\\xaml.behaviors.avalonia.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactions\\11.3.2\\xaml.behaviors.interactions.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactions.custom\\11.3.2\\xaml.behaviors.interactions.custom.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactions.draganddrop\\11.3.2\\xaml.behaviors.interactions.draganddrop.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactions.draggable\\11.3.2\\xaml.behaviors.interactions.draggable.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactions.events\\11.3.2\\xaml.behaviors.interactions.events.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactions.responsive\\11.3.2\\xaml.behaviors.interactions.responsive.11.3.2.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\xaml.behaviors.interactivity\\11.3.2\\xaml.behaviors.interactivity.11.3.2.nupkg.sha512"
   ],
   "logs": []
 }

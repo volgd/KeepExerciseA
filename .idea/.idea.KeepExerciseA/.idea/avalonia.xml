@@ -4,7 +4,12 @@
     <option name="projectPerEditor">
       <map>
         <entry key="KeepExerciseA/App.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
+        <entry key="KeepExerciseA/Views/InitializationView.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
+        <entry key="KeepExerciseA/Views/MainView.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
         <entry key="KeepExerciseA/Views/MainWindow.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
+        <entry key="KeepExerciseA/Views/QueryView.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
+        <entry key="KeepExerciseA/Views/TodayDetailView.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
+        <entry key="KeepExerciseA/Views/TodayView.axaml" value="KeepExerciseA/KeepExerciseA.csproj" />
       </map>
     </option>
   </component>

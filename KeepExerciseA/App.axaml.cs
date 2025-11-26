@@ -25,10 +25,12 @@ public partial class App : Application
             // Avoid duplicate validations from both Avalonia and the CommunityToolkit. 
             // More info: https://docs.avaloniaui.net/docs/guides/development-guides/data-validation#manage-validationplugins
             DisableAvaloniaDataAnnotationValidation();
-            desktop.MainWindow = new MainWindow
-            {
-                DataContext = new ResultViewModel(new ExerciseTipsStorage(new FilePreferenceStorage())),
-            };
+            desktop.MainWindow = new MainWindow();
+            
+            
+            //to
+            ServicesLocator.Current.RootNavigationServices.NavigateTo(RootNavigationConstant.MainView);
+            ServicesLocator.Current.MainViewModel.PushContent(ServicesLocator.Current.TodayViewModel);
         }
 
         base.OnFrameworkInitializationCompleted();

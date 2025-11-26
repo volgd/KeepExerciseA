@@ -1,4 +1,6 @@
-﻿namespace KeepExerciseA.ViewModels;
+﻿using KeepExerciseA.Library.ViewModels;
+
+namespace KeepExerciseA.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

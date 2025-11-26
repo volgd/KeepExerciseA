@@ -15,7 +15,11 @@
           "Avalonia.Themes.Fluent": "11.3.4",
           "AvaloniaInfiniteScrolling.Control": "1.0.0",
           "CommunityToolkit.Mvvm": "8.4.0",
-          "KeepExerciseA.Library": "1.0.0"
+          "KeepExerciseA.Library": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "9.0.9",
+          "Projektanker.Icons.Avalonia.FontAwesome": "9.6.2",
+          "Semi.Avalonia": "11.2.1.10",
+          "Xaml.Behaviors.Avalonia": "11.3.2"
         },
         "runtime": {
           "KeepExerciseA.dll": {}
@@ -387,6 +391,59 @@
           }
         }
       },
+      "Microsoft.Extensions.DependencyInjection/9.0.9": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.925.41916"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.9": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.925.41916"
+          }
+        }
+      },
+      "Projektanker.Icons.Avalonia/9.6.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Projektanker.Icons.Avalonia.dll": {
+            "assemblyVersion": "9.6.2.0",
+            "fileVersion": "9.6.2.0"
+          }
+        }
+      },
+      "Projektanker.Icons.Avalonia.FontAwesome/9.6.2": {
+        "dependencies": {
+          "Projektanker.Icons.Avalonia": "9.6.2",
+          "System.Text.Json": "9.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Projektanker.Icons.Avalonia.FontAwesome.dll": {
+            "assemblyVersion": "9.6.2.0",
+            "fileVersion": "9.6.2.0"
+          }
+        }
+      },
+      "Semi.Avalonia/11.2.1.10": {
+        "dependencies": {
+          "Avalonia": "11.3.4"
+        },
+        "runtime": {
+          "lib/net8.0/Semi.Avalonia.dll": {
+            "assemblyVersion": "11.2.1.10",
+            "fileVersion": "11.2.1.10"
+          }
+        }
+      },
       "SkiaSharp/2.88.9": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "2.88.9",
@@ -614,23 +671,146 @@
           }
         }
       },
-      "System.IO.Pipelines/8.0.0": {
+      "System.IO.Pipelines/9.0.4": {
         "runtime": {
           "lib/net8.0/System.IO.Pipelines.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
           }
         }
       },
       "System.Memory/4.5.3": {},
+      "System.Text.Encodings.Web/9.0.4": {
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "rid": "browser",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      },
+      "System.Text.Json/9.0.4": {
+        "dependencies": {
+          "System.IO.Pipelines": "9.0.4",
+          "System.Text.Encodings.Web": "9.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      },
       "Tmds.DBus.Protocol/0.21.2": {
         "dependencies": {
-          "System.IO.Pipelines": "8.0.0"
+          "System.IO.Pipelines": "9.0.4"
         },
         "runtime": {
           "lib/net8.0/Tmds.DBus.Protocol.dll": {
             "assemblyVersion": "0.21.2.0",
             "fileVersion": "0.21.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Avalonia/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactions": "11.3.2",
+          "Xaml.Behaviors.Interactions.Custom": "11.3.2",
+          "Xaml.Behaviors.Interactions.DragAndDrop": "11.3.2",
+          "Xaml.Behaviors.Interactions.Draggable": "11.3.2",
+          "Xaml.Behaviors.Interactions.Events": "11.3.2",
+          "Xaml.Behaviors.Interactions.Responsive": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        }
+      },
+      "Xaml.Behaviors.Interactions/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Custom/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Custom.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.DragAndDrop/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.DragAndDrop.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Draggable/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Draggable.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Events/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Events.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Responsive/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Responsive.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactivity/11.3.2": {
+        "dependencies": {
+          "Avalonia": "11.3.4"
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactivity.dll": {
+            "assemblyVersion": "11.3.2.0",
+            "fileVersion": "11.3.2.0"
           }
         }
       },
@@ -823,6 +1003,41 @@
       "path": "microcom.runtime/0.11.0",
       "hashPath": "microcom.runtime.0.11.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.DependencyInjection/9.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zQV2WOSP+3z1EuK91ULxfGgo2Y75bTRnmJHp08+w/YXAyekZutX/qCd88/HOMNh35MDW9mJJJxPpMPS+1Rww8A==",
+      "path": "microsoft.extensions.dependencyinjection/9.0.9",
+      "hashPath": "microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/hymojfWbE9AlDOa0mczR44m00Jj+T3+HZO0ZnVTI032fVycI0ZbNOVFP6kqZMcXiLSYXzR2ilcwaRi6dzeGyA==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.9",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512"
+    },
+    "Projektanker.Icons.Avalonia/9.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AFPMAp41KvbZCpvo5uS83KVFVVDe6nfWSSmefeP3MBDT1eZosKObcXhNI1BAyt4CDPAaB7dUWaOPAYanzk5ybQ==",
+      "path": "projektanker.icons.avalonia/9.6.2",
+      "hashPath": "projektanker.icons.avalonia.9.6.2.nupkg.sha512"
+    },
+    "Projektanker.Icons.Avalonia.FontAwesome/9.6.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mFDatxzoIUvBIHtPo45kX2sufhp+qf6L3I5WT/shUXrfbKbvIff4dtfjqFWCK2Z3RH31l0I9L7UHY5VLYsqX2g==",
+      "path": "projektanker.icons.avalonia.fontawesome/9.6.2",
+      "hashPath": "projektanker.icons.avalonia.fontawesome.9.6.2.nupkg.sha512"
+    },
+    "Semi.Avalonia/11.2.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sEk9rMdjiaX1dJvrMgxkU7Nc2qBScFhfJf7pOgbn0rRbbmRF1lsW4ehZdjds/UMvelqkTUZvt6C93uWrOIJ4Hg==",
+      "path": "semi.avalonia/11.2.1.10",
+      "hashPath": "semi.avalonia.11.2.1.10.nupkg.sha512"
+    },
     "SkiaSharp/2.88.9": {
       "type": "package",
       "serviceable": true,
@@ -893,12 +1108,12 @@
       "path": "sqlitepclraw.provider.e_sqlite3/2.1.2",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512"
     },
-    "System.IO.Pipelines/8.0.0": {
+    "System.IO.Pipelines/9.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
-      "path": "system.io.pipelines/8.0.0",
-      "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
+      "sha512": "sha512-luF2Xba+lTe2GOoNQdZLe8q7K6s7nSpWZl9jIwWNMszN4/Yv0lmxk9HISgMmwdyZ83i3UhAGXaSY9o6IJBUuuA==",
+      "path": "system.io.pipelines/9.0.4",
+      "hashPath": "system.io.pipelines.9.0.4.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",
@@ -907,12 +1122,82 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
+    "System.Text.Encodings.Web/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V+5cCPpk1S2ngekUs9nDrQLHGiWFZMg8BthADQr+Fwi59a8DdHFu26S2oi9Bfgv+d67bqmkPqctJXMEXiimXUg==",
+      "path": "system.text.encodings.web/9.0.4",
+      "hashPath": "system.text.encodings.web.9.0.4.nupkg.sha512"
+    },
+    "System.Text.Json/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pYtmpcO6R3Ef1XilZEHgXP2xBPVORbYEzRP7dl0IAAbN8Dm+kfwio8aCKle97rAWXOExr292MuxWYurIuwN62g==",
+      "path": "system.text.json/9.0.4",
+      "hashPath": "system.text.json.9.0.4.nupkg.sha512"
+    },
     "Tmds.DBus.Protocol/0.21.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-ScSMrUrrw8px4kK1Glh0fZv/HQUlg1078bNXNPfRPKQ3WbRzV9HpsydYEOgSoMK5LWICMf2bMwIFH0pGjxjcMA==",
       "path": "tmds.dbus.protocol/0.21.2",
       "hashPath": "tmds.dbus.protocol.0.21.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Avalonia/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DO7WEppHqfCED00AGqB0bbc3y+nKug41w/bsSBqDiwCHpwvWLLxOTh9gLJz+TfATm3OyT9ASHu5U9CSEAWL8hg==",
+      "path": "xaml.behaviors.avalonia/11.3.2",
+      "hashPath": "xaml.behaviors.avalonia.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactions/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pN2I2tsl5FThCaKJZ2qeRND20RcEoJlC7c2mze4NoNMeeF+IOw6pRqTCUwmcOGN8YMHf/ZTKlCSpozV8TAzI3Q==",
+      "path": "xaml.behaviors.interactions/11.3.2",
+      "hashPath": "xaml.behaviors.interactions.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactions.Custom/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZmyBv7uRX+6BG9SYo8UaB82SNXsRD3zUgwogD9ARP0eX75fgaL355goqmfHErb+nCzdhyAudJEeWekM20qIMjg==",
+      "path": "xaml.behaviors.interactions.custom/11.3.2",
+      "hashPath": "xaml.behaviors.interactions.custom.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactions.DragAndDrop/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-purd+KuI6PPDR/yEXrgLYMVBXSjwBaZ+IwoEC9x9h5y981MbulqI4fBIj+Q653ARfWAmwHY/uXX38lg+bAWOVw==",
+      "path": "xaml.behaviors.interactions.draganddrop/11.3.2",
+      "hashPath": "xaml.behaviors.interactions.draganddrop.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactions.Draggable/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pV9h5/3WLFF89yXyaxEBDqt87wvrXvNTOoXp3x5kZHIfK1CX/SvH6JyjRvpGwL7S1JPUSzQSVZZxUueq4XSBWQ==",
+      "path": "xaml.behaviors.interactions.draggable/11.3.2",
+      "hashPath": "xaml.behaviors.interactions.draggable.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactions.Events/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o5e5YOCFgyBl0v+AWs88SaN1I6UOCXGCsCA6+b3Kr+50IDWB2cj3ezeI82NIkpOObRFTFEVHyzgpy8UN1M9yzQ==",
+      "path": "xaml.behaviors.interactions.events/11.3.2",
+      "hashPath": "xaml.behaviors.interactions.events.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactions.Responsive/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qja67gZlezk358P9Y76f1NizFU4hmg0uKe/gJbkwjK2XRA6WdjdNuK40tG/DDWCtPr6MescsHzMSvX3szCk+yA==",
+      "path": "xaml.behaviors.interactions.responsive/11.3.2",
+      "hashPath": "xaml.behaviors.interactions.responsive.11.3.2.nupkg.sha512"
+    },
+    "Xaml.Behaviors.Interactivity/11.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aXWHrEtdgX4PDXeLvI82UU5PviRQTi7GEXzz09BP/REnkeSyKXbL6uM4Qv/On78K22uyhOpSeSG+N082qkuhFg==",
+      "path": "xaml.behaviors.interactivity/11.3.2",
+      "hashPath": "xaml.behaviors.interactivity.11.3.2.nupkg.sha512"
     },
     "KeepExerciseA.Library/1.0.0": {
       "type": "project",

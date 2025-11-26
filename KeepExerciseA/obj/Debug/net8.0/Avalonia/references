@@ -29,12 +29,17 @@ C:\Users\ASUS\.nuget\packages\harfbuzzsharp\8.3.1.1\lib\net8.0\HarfBuzzSharp.dll
 E:\RiderProject\KeepExerciseA\KeepExerciseA.Library\obj\Debug\net8.0\ref\KeepExerciseA.Library.dll
 C:\Users\ASUS\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.CSharp.dll
+C:\Users\ASUS\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\9.0.9\lib\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\.nuget\packages\microsoft.extensions.dependencyinjection\9.0.9\lib\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.Win32.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\Microsoft.Win32.Registry.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\netstandard.dll
+C:\Users\ASUS\.nuget\packages\projektanker.icons.avalonia\9.6.2\lib\netstandard2.0\Projektanker.Icons.Avalonia.dll
+C:\Users\ASUS\.nuget\packages\projektanker.icons.avalonia.fontawesome\9.6.2\lib\netstandard2.0\Projektanker.Icons.Avalonia.FontAwesome.dll
+C:\Users\ASUS\.nuget\packages\semi.avalonia\11.2.1.10\lib\net8.0\Semi.Avalonia.dll
 C:\Users\ASUS\.nuget\packages\skiasharp\2.88.9\lib\net6.0\SkiaSharp.dll
 C:\Users\ASUS\.nuget\packages\sqlite-net-pcl\1.9.172\lib\netstandard2.0\SQLite-net.dll
 C:\Users\ASUS\.nuget\packages\sqlitepclraw.bundle_green\2.1.2\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll
@@ -90,7 +95,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.FileSystem.Watcher.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.IsolatedStorage.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.MemoryMappedFiles.dll
-C:\Users\ASUS\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll
+C:\Users\ASUS\.nuget\packages\system.io.pipelines\9.0.4\lib\net8.0\System.IO.Pipelines.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.Pipes.AccessControl.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.Pipes.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.IO.UnmanagedMemoryStream.dll
@@ -168,8 +173,8 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Text.Encoding.CodePages.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Text.Encoding.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Text.Encoding.Extensions.dll
-C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Text.Encodings.Web.dll
-C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Text.Json.dll
+C:\Users\ASUS\.nuget\packages\system.text.encodings.web\9.0.4\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ASUS\.nuget\packages\system.text.json\9.0.4\lib\net8.0\System.Text.Json.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Text.RegularExpressions.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Threading.Channels.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Threading.dll
@@ -198,3 +203,10 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\System.Xml.XPath.XDocument.dll
 C:\Users\ASUS\.nuget\packages\tmds.dbus.protocol\0.21.2\lib\net8.0\Tmds.DBus.Protocol.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.15\ref\net8.0\WindowsBase.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions.custom\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.Custom.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions.draganddrop\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.DragAndDrop.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions.draggable\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.Draggable.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions.events\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.Events.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactions.responsive\11.3.2\lib\net8.0\Xaml.Behaviors.Interactions.Responsive.dll
+C:\Users\ASUS\.nuget\packages\xaml.behaviors.interactivity\11.3.2\lib\net8.0\Xaml.Behaviors.Interactivity.dll

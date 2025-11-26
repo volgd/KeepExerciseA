@@ -495,6 +495,78 @@
           "lib/net5.0/MicroCom.Runtime.dll": {}
         }
       },
+      "Microsoft.Extensions.DependencyInjection/9.0.9": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Projektanker.Icons.Avalonia/9.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.2.8"
+        },
+        "compile": {
+          "lib/netstandard2.0/Projektanker.Icons.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Projektanker.Icons.Avalonia.dll": {}
+        }
+      },
+      "Projektanker.Icons.Avalonia.FontAwesome/9.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Projektanker.Icons.Avalonia": "9.6.2",
+          "System.Text.Json": "9.0.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Projektanker.Icons.Avalonia.FontAwesome.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Projektanker.Icons.Avalonia.FontAwesome.dll": {}
+        }
+      },
+      "Semi.Avalonia/11.2.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.2.1"
+        },
+        "compile": {
+          "lib/net8.0/Semi.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Semi.Avalonia.dll": {}
+        }
+      },
       "SkiaSharp/2.88.9": {
         "type": "package",
         "dependencies": {
@@ -748,7 +820,7 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "System.IO.Pipelines/8.0.0": {
+      "System.IO.Pipelines/9.0.4": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.IO.Pipelines.dll": {
@@ -761,7 +833,7 @@
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "System.Memory/4.5.3": {
@@ -771,6 +843,48 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/9.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
+            "assetType": "runtime",
+            "rid": "browser"
+          }
+        }
+      },
+      "System.Text.Json/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "9.0.4",
+          "System.Text.Encodings.Web": "9.0.4"
+        },
+        "compile": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Text.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
       },
       "Tmds.DBus.Protocol/0.21.2": {
@@ -783,6 +897,137 @@
         },
         "runtime": {
           "lib/net8.0/Tmds.DBus.Protocol.dll": {}
+        }
+      },
+      "Xaml.Behaviors.Avalonia/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactions": "11.3.2",
+          "Xaml.Behaviors.Interactions.Custom": "11.3.2",
+          "Xaml.Behaviors.Interactions.DragAndDrop": "11.3.2",
+          "Xaml.Behaviors.Interactions.Draggable": "11.3.2",
+          "Xaml.Behaviors.Interactions.Events": "11.3.2",
+          "Xaml.Behaviors.Interactions.Responsive": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        }
+      },
+      "Xaml.Behaviors.Interactions/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Custom/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Custom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Custom.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.DragAndDrop/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.DragAndDrop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.DragAndDrop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Draggable/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Draggable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Draggable.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Events/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Events.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Events.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactions.Responsive/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2",
+          "Xaml.Behaviors.Interactivity": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Responsive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactions.Responsive.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Xaml.Behaviors.Interactivity/11.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.2"
+        },
+        "compile": {
+          "lib/net8.0/Xaml.Behaviors.Interactivity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Xaml.Behaviors.Interactivity.dll": {
+            "related": ".xml"
+          }
         }
       },
       "KeepExerciseA.Library/1.0.0": {
@@ -1466,6 +1711,108 @@
         "microcom.runtime.nuspec"
       ]
     },
+    "Microsoft.Extensions.DependencyInjection/9.0.9": {
+      "sha512": "zQV2WOSP+3z1EuK91ULxfGgo2Y75bTRnmJHp08+w/YXAyekZutX/qCd88/HOMNh35MDW9mJJJxPpMPS+1Rww8A==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/9.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.9": {
+      "sha512": "/hymojfWbE9AlDOa0mczR44m00Jj+T3+HZO0ZnVTI032fVycI0ZbNOVFP6kqZMcXiLSYXzR2ilcwaRi6dzeGyA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Projektanker.Icons.Avalonia/9.6.2": {
+      "sha512": "AFPMAp41KvbZCpvo5uS83KVFVVDe6nfWSSmefeP3MBDT1eZosKObcXhNI1BAyt4CDPAaB7dUWaOPAYanzk5ybQ==",
+      "type": "package",
+      "path": "projektanker.icons.avalonia/9.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Projektanker.Icons.Avalonia.dll",
+        "projektanker.icons.avalonia.9.6.2.nupkg.sha512",
+        "projektanker.icons.avalonia.nuspec"
+      ]
+    },
+    "Projektanker.Icons.Avalonia.FontAwesome/9.6.2": {
+      "sha512": "mFDatxzoIUvBIHtPo45kX2sufhp+qf6L3I5WT/shUXrfbKbvIff4dtfjqFWCK2Z3RH31l0I9L7UHY5VLYsqX2g==",
+      "type": "package",
+      "path": "projektanker.icons.avalonia.fontawesome/9.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Projektanker.Icons.Avalonia.FontAwesome.dll",
+        "projektanker.icons.avalonia.fontawesome.9.6.2.nupkg.sha512",
+        "projektanker.icons.avalonia.fontawesome.nuspec"
+      ]
+    },
+    "Semi.Avalonia/11.2.1.10": {
+      "sha512": "sEk9rMdjiaX1dJvrMgxkU7Nc2qBScFhfJf7pOgbn0rRbbmRF1lsW4ehZdjds/UMvelqkTUZvt6C93uWrOIJ4Hg==",
+      "type": "package",
+      "path": "semi.avalonia/11.2.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "irihi.png",
+        "lib/net6.0/Semi.Avalonia.dll",
+        "lib/net8.0/Semi.Avalonia.dll",
+        "lib/netstandard2.0/Semi.Avalonia.dll",
+        "semi.avalonia.11.2.1.10.nupkg.sha512",
+        "semi.avalonia.nuspec"
+      ]
+    },
     "SkiaSharp/2.88.9": {
       "sha512": "3MD5VHjXXieSHCleRLuaTXmL2pD0mB7CcOB1x2kA1I4bhptf4e3R27iM93264ZYuAq6mkUyX5XbcxnZvMJYc1Q==",
       "type": "package",
@@ -1748,31 +2095,30 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
-    "System.IO.Pipelines/8.0.0": {
-      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+    "System.IO.Pipelines/9.0.4": {
+      "sha512": "luF2Xba+lTe2GOoNQdZLe8q7K6s7nSpWZl9jIwWNMszN4/Yv0lmxk9HISgMmwdyZ83i3UhAGXaSY9o6IJBUuuA==",
       "type": "package",
-      "path": "system.io.pipelines/8.0.0",
+      "path": "system.io.pipelines/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.IO.Pipelines.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
         "lib/net462/System.IO.Pipelines.dll",
         "lib/net462/System.IO.Pipelines.xml",
-        "lib/net6.0/System.IO.Pipelines.dll",
-        "lib/net6.0/System.IO.Pipelines.xml",
-        "lib/net7.0/System.IO.Pipelines.dll",
-        "lib/net7.0/System.IO.Pipelines.xml",
         "lib/net8.0/System.IO.Pipelines.dll",
         "lib/net8.0/System.IO.Pipelines.xml",
+        "lib/net9.0/System.IO.Pipelines.dll",
+        "lib/net9.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.8.0.0.nupkg.sha512",
+        "system.io.pipelines.9.0.4.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1798,6 +2144,109 @@
         "version.txt"
       ]
     },
+    "System.Text.Encodings.Web/9.0.4": {
+      "sha512": "V+5cCPpk1S2ngekUs9nDrQLHGiWFZMg8BthADQr+Fwi59a8DdHFu26S2oi9Bfgv+d67bqmkPqctJXMEXiimXUg==",
+      "type": "package",
+      "path": "system.text.encodings.web/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Text.Encodings.Web.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
+        "lib/net462/System.Text.Encodings.Web.dll",
+        "lib/net462/System.Text.Encodings.Web.xml",
+        "lib/net8.0/System.Text.Encodings.Web.dll",
+        "lib/net8.0/System.Text.Encodings.Web.xml",
+        "lib/net9.0/System.Text.Encodings.Web.dll",
+        "lib/net9.0/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net9.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.9.0.4.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Json/9.0.4": {
+      "sha512": "pYtmpcO6R3Ef1XilZEHgXP2xBPVORbYEzRP7dl0IAAbN8Dm+kfwio8aCKle97rAWXOExr292MuxWYurIuwN62g==",
+      "type": "package",
+      "path": "system.text.json/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "buildTransitive/net461/System.Text.Json.targets",
+        "buildTransitive/net462/System.Text.Json.targets",
+        "buildTransitive/net8.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netstandard2.0/System.Text.Json.targets",
+        "lib/net462/System.Text.Json.dll",
+        "lib/net462/System.Text.Json.xml",
+        "lib/net8.0/System.Text.Json.dll",
+        "lib/net8.0/System.Text.Json.xml",
+        "lib/net9.0/System.Text.Json.dll",
+        "lib/net9.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.9.0.4.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Tmds.DBus.Protocol/0.21.2": {
       "sha512": "ScSMrUrrw8px4kK1Glh0fZv/HQUlg1078bNXNPfRPKQ3WbRzV9HpsydYEOgSoMK5LWICMf2bMwIFH0pGjxjcMA==",
       "type": "package",
@@ -1811,6 +2260,136 @@
         "lib/netstandard2.1/Tmds.DBus.Protocol.dll",
         "tmds.dbus.protocol.0.21.2.nupkg.sha512",
         "tmds.dbus.protocol.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Avalonia/11.3.2": {
+      "sha512": "DO7WEppHqfCED00AGqB0bbc3y+nKug41w/bsSBqDiwCHpwvWLLxOTh9gLJz+TfATm3OyT9ASHu5U9CSEAWL8hg==",
+      "type": "package",
+      "path": "xaml.behaviors.avalonia/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "xaml.behaviors.avalonia.11.3.2.nupkg.sha512",
+        "xaml.behaviors.avalonia.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactions/11.3.2": {
+      "sha512": "pN2I2tsl5FThCaKJZ2qeRND20RcEoJlC7c2mze4NoNMeeF+IOw6pRqTCUwmcOGN8YMHf/ZTKlCSpozV8TAzI3Q==",
+      "type": "package",
+      "path": "xaml.behaviors.interactions/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactions.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactions.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactions.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactions.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.xml",
+        "xaml.behaviors.interactions.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactions.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactions.Custom/11.3.2": {
+      "sha512": "ZmyBv7uRX+6BG9SYo8UaB82SNXsRD3zUgwogD9ARP0eX75fgaL355goqmfHErb+nCzdhyAudJEeWekM20qIMjg==",
+      "type": "package",
+      "path": "xaml.behaviors.interactions.custom/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Custom.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Custom.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Custom.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Custom.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Custom.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Custom.xml",
+        "xaml.behaviors.interactions.custom.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactions.custom.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactions.DragAndDrop/11.3.2": {
+      "sha512": "purd+KuI6PPDR/yEXrgLYMVBXSjwBaZ+IwoEC9x9h5y981MbulqI4fBIj+Q653ARfWAmwHY/uXX38lg+bAWOVw==",
+      "type": "package",
+      "path": "xaml.behaviors.interactions.draganddrop/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactions.DragAndDrop.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactions.DragAndDrop.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactions.DragAndDrop.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactions.DragAndDrop.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.DragAndDrop.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.DragAndDrop.xml",
+        "xaml.behaviors.interactions.draganddrop.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactions.draganddrop.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactions.Draggable/11.3.2": {
+      "sha512": "pV9h5/3WLFF89yXyaxEBDqt87wvrXvNTOoXp3x5kZHIfK1CX/SvH6JyjRvpGwL7S1JPUSzQSVZZxUueq4XSBWQ==",
+      "type": "package",
+      "path": "xaml.behaviors.interactions.draggable/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Draggable.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Draggable.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Draggable.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Draggable.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Draggable.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Draggable.xml",
+        "xaml.behaviors.interactions.draggable.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactions.draggable.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactions.Events/11.3.2": {
+      "sha512": "o5e5YOCFgyBl0v+AWs88SaN1I6UOCXGCsCA6+b3Kr+50IDWB2cj3ezeI82NIkpOObRFTFEVHyzgpy8UN1M9yzQ==",
+      "type": "package",
+      "path": "xaml.behaviors.interactions.events/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Events.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Events.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Events.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Events.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Events.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Events.xml",
+        "xaml.behaviors.interactions.events.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactions.events.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactions.Responsive/11.3.2": {
+      "sha512": "Qja67gZlezk358P9Y76f1NizFU4hmg0uKe/gJbkwjK2XRA6WdjdNuK40tG/DDWCtPr6MescsHzMSvX3szCk+yA==",
+      "type": "package",
+      "path": "xaml.behaviors.interactions.responsive/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Responsive.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactions.Responsive.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Responsive.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactions.Responsive.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Responsive.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactions.Responsive.xml",
+        "xaml.behaviors.interactions.responsive.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactions.responsive.nuspec"
+      ]
+    },
+    "Xaml.Behaviors.Interactivity/11.3.2": {
+      "sha512": "aXWHrEtdgX4PDXeLvI82UU5PviRQTi7GEXzz09BP/REnkeSyKXbL6uM4Qv/On78K22uyhOpSeSG+N082qkuhFg==",
+      "type": "package",
+      "path": "xaml.behaviors.interactivity/11.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Xaml.Behaviors.Interactivity.dll",
+        "lib/net6.0/Xaml.Behaviors.Interactivity.xml",
+        "lib/net8.0/Xaml.Behaviors.Interactivity.dll",
+        "lib/net8.0/Xaml.Behaviors.Interactivity.xml",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactivity.dll",
+        "lib/netstandard2.0/Xaml.Behaviors.Interactivity.xml",
+        "xaml.behaviors.interactivity.11.3.2.nupkg.sha512",
+        "xaml.behaviors.interactivity.nuspec"
       ]
     },
     "KeepExerciseA.Library/1.0.0": {
@@ -1828,7 +2407,11 @@
       "Avalonia.Themes.Fluent >= 11.3.4",
       "AvaloniaInfiniteScrolling.Control >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.4.0",
-      "KeepExerciseA.Library >= 1.0.0"
+      "KeepExerciseA.Library >= 1.0.0",
+      "Microsoft.Extensions.DependencyInjection >= 9.0.9",
+      "Projektanker.Icons.Avalonia.FontAwesome >= 9.6.2",
+      "Semi.Avalonia >= 11.2.1.10",
+      "Xaml.Behaviors.Avalonia >= 11.3.2"
     ]
   },
   "packageFolders": {
@@ -1912,6 +2495,22 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.4.0, )"
+          },
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[9.0.9, )"
+          },
+          "Projektanker.Icons.Avalonia.FontAwesome": {
+            "target": "Package",
+            "version": "[9.6.2, )"
+          },
+          "Semi.Avalonia": {
+            "target": "Package",
+            "version": "[11.2.1.10, )"
+          },
+          "Xaml.Behaviors.Avalonia": {
+            "target": "Package",
+            "version": "[11.3.2, )"
           }
         },
         "imports": [
