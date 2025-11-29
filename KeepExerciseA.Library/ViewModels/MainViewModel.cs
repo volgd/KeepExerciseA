@@ -102,8 +102,14 @@ public class MenuItem
     public static MenuItem TodayView => new() { Name = "锻炼推荐", View = MenuNavigationConstant.TodayView };
 
     public static MenuItem QueryView => new() { Name = "建议搜索", View = MenuNavigationConstant.QueryView };
+    
+    public static MenuItem TrainingPlanView => new() { Name = "训练计划", View = MenuNavigationConstant.TrainingPlanView };
+    
+    public static MenuItem FitnessnessView => new() { Name = "健康评估", View = MenuNavigationConstant.FitnessAssessmentView };
     public static IEnumerable<MenuItem> MenuItems { get; } = [
         TodayView,
-        QueryView
+        QueryView,
+        TrainingPlanView,
+        FitnessnessView
     ];
 }

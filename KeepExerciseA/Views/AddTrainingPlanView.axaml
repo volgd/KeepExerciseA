@@ -1,0 +1,110 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="500"
+             x:Class="KeepExerciseA.Views.AddTrainingPlanView"
+             xmlns:vm="using:KeepExerciseA.Library.ViewModels">
+    <Design.DataContext>
+        <vm:AddTrainingPlanViewModel/>
+    </Design.DataContext>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" Margin="0,0,0,15">
+            <TextBlock Text="计划名称" FontWeight="Bold"/>
+            <TextBox Text="{Binding Name}" Margin="0,5,0,0"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="1" Margin="0,0,0,15">
+            <TextBlock Text="训练时间" FontWeight="Bold"/>
+            <!-- 改为垂直布局，确保时间选择器完整显示 -->
+            <StackPanel Margin="0,5,0,0">
+                <DatePicker 
+                    SelectedDate="{Binding TrainingDate}" 
+                    Width="300"
+                    HorizontalAlignment="Left"/>
+                <TimePicker 
+                    SelectedTime="{Binding TrainingTimeOfDay}" 
+                    Width="300"
+                    HorizontalAlignment="Left"
+                    Margin="0,10,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                <TextBlock Text="可用动作" FontWeight="Bold"/>
+                <ListBox Name="AvailableActionsList"
+                         ItemsSource="{Binding AvailableActions}"
+                         Height="300" Margin="0,5,0,0">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="LightBlue"
+                                    CornerRadius="5" Padding="5" Margin="2">
+                                <TextBlock Text="{Binding content}"
+                                           TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="已选动作" FontWeight="Bold"/>
+                <ListBox Name="SelectedActionsList"
+                         ItemsSource="{Binding SelectedActions}"
+                         Height="300" Margin="0,5,0,0">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="LightGreen"
+                                    CornerRadius="5" Padding="5" Margin="2">
+                                <TextBlock Text="{Binding content}"
+                                           TextWrapping="Wrap"/>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </Grid>
+        
+        <!-- 添加动作选择按钮-->
+        <StackPanel
+            Grid.Row="2"
+            Orientation="Horizontal"
+            HorizontalAlignment="Center" 
+            Margin="0,320,0,0">
+            <Button Content="添加到已选" 
+                    Name="AddToSelectedButton"
+                    Width="120" Height="30" 
+                    Margin="0,0,10,0"/>
+            <Button Content="从已选移除" 
+                    Name="RemoveFromSelectedButton"
+                    Width="120" Height="30"/>
+        </StackPanel>
+        
+        <StackPanel
+            Grid.Row="3"
+            Orientation="Horizontal"
+            HorizontalAlignment="Right" 
+            Margin="0,15,0,0">
+            <Button Content="保存" 
+                    Command="{Binding SaveCommand}"
+                    Width="80" 
+                    Margin="0,0,10,0"/>
+            <Button Content="取消" 
+                    Command="{Binding CancelCommand}"
+                    Width="80"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

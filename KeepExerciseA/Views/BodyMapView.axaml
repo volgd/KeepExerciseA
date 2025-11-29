@@ -1,0 +1,113 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="KeepExerciseA.Views.BodyMapView">
+    <Grid RowDefinitions="Auto,*"
+          ColumnDefinitions="2*,3*"
+          Margin="16">
+
+        <!-- 标题：显示当前选择部位 -->
+        <TextBlock Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Text="{Binding SelectedRegionTitle}"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Margin="0,0,0,12" />
+
+        <!-- 左侧：人体图 + 透明按钮区域 -->
+        <Grid Grid.Row="1" Grid.Column="0">
+
+    <!-- 人体图片：给一个 x:Name 方便后面代码访问 -->
+    <Image x:Name="BodyImage"
+           Stretch="Uniform" />
+
+    <!-- 胸部 -->
+    <Button Command="{Binding SelectRegionCommand}"
+            CommandParameter="胸部"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Width="60" Height="45"  
+            Content=""
+            ToolTip.Tip="胸部" />
+
+    <!-- 肩部 -->
+    <Button Command="{Binding SelectRegionCommand}"
+            CommandParameter="肩部"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Margin="0,40,0,0" 
+            Width="90" Height="30" 
+            Content=""
+            ToolTip.Tip="肩部" />
+
+    <!-- 手臂 -->
+    <Button Command="{Binding SelectRegionCommand}"
+            CommandParameter="手臂"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Margin="30,0,0,0" 
+            Width="60" Height="100" 
+            Content=""
+            ToolTip.Tip="手臂" />
+
+    <!-- 腹部 -->
+    <Button Command="{Binding SelectRegionCommand}"
+            CommandParameter="腹部"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Margin="0,60,0,0" 
+            Width="60" Height="60" 
+            Content=""
+            ToolTip.Tip="腹部" />
+
+    <!-- 腿部 -->
+    <Button Command="{Binding SelectRegionCommand}"
+            CommandParameter="腿部"
+            Background="Transparent"
+            BorderBrush="Transparent"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Margin="0,0,0,10" 
+            Width="100" Height="100" 
+            Content=""
+            ToolTip.Tip="腿部" />
+</Grid>
+
+
+        <!-- 右侧：锻炼建议列表 -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1">
+            <ItemsControl ItemsSource="{Binding Tips}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="0,0,0,12"
+                                Padding="12"
+                                Background="#ffffff"
+                                CornerRadius="8">
+                            <StackPanel>
+                                <TextBlock Text="{Binding aimmuscle}"
+                                           FontSize="16"
+                                           FontWeight="Bold"/>
+
+                                <TextBlock Text="{Binding content}"
+                                           Margin="0,4,0,0"
+                                           TextWrapping="Wrap"/>
+
+                                <TextBlock Text="{Binding precaution}"
+                                           Margin="0,4,0,0"
+                                           TextWrapping="Wrap"
+                                           Foreground="#CCC"/>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

@@ -65,9 +65,11 @@ public class JinriTipServices(IAlertServices _alertServices,IExerciseTipsStorage
             return new TodayExerciseTips
             {
                 snippet = rootObject?.Choices[0]?.Message?.Content ?? throw new JsonException(),
-                Warning = rootObject?.Choices[0].Message.Reasoning_content ?? throw new JsonException(),
-                Content = string.Join("\n", rootObject?.Choices[0].Message?.Content ?? throw new JsonException())
+                Content = string.Join("\n", rootObject?.Choices[0].Message?.Content ?? throw new JsonException()),
+                Warning = rootObject?.Choices[0].Message?.Reasoning_content ?? throw new JsonException(),
+                Source = TodayExercisesTipsSource.Jinritip
             };
+            
         }
         catch (Exception e)
         {
@@ -86,7 +88,6 @@ public class JinriTipServices(IAlertServices _alertServices,IExerciseTipsStorage
         return new TodayExerciseTips
         {
             snippet = exerciseTip.Part,
-            Aimmuscle = exerciseTip.aimmuscle,
             Content = exerciseTip.content,
             Warning = exerciseTip.precautions
         };

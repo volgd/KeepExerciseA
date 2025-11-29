@@ -29,12 +29,21 @@ public class ExerciseTipsStorage : IExerciseTipsStorage
     
     public async Task InitializeAsync() //在本地文件系统中写入嵌入式资源
     {
+        await connection.CreateTableAsync<ExerciseTips>();
+        await connection.CreateTableAsync<TrainingPlan>();
+        await connection.CreateTableAsync<TrainingPlanAction>();
+        
+        
         await using var dbFileStream = new FileStream(ExerciseTipsDBPath, FileMode.OpenOrCreate);
         await using var dbAssertStream = typeof(ExerciseTips).Assembly.
             GetManifestResourceStream(DBName); //从程序集中读取嵌入式资源（数据库）
         await dbAssertStream.CopyToAsync(dbFileStream);
         _preferenceStorage.Set(ExerciseTipsStorageConstant.VersionKey,
             ExerciseTipsStorageConstant.Version);
+        
+        await connection.CreateTableAsync<ExerciseTips>();
+        await connection.CreateTableAsync<TrainingPlan>();
+        await connection.CreateTableAsync<TrainingPlanAction>();
     }
 
     public async Task<ExerciseTips> GetTipsAsync(int id) =>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="KeepExerciseA.sqlite3" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="955"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="KeepExerciseADBTable" custom_title="0" dock_id="3" table="4,20:mainKeepExerciseADBTable"/><dock_state state="000000ff00000000fd0000000100000002000004e700000385fc0100000003fb000000160064006f0063006b00420072006f00770073006500310100000000000004e70000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000000004e70000000000000000fb000000160064006f0063006b00420072006f00770073006500330100000000000004e70000011400ffffff000002780000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="ExerciseTips" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="23"/><column index="2" value="71"/><column index="3" value="300"/><column index="4" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="KeepExerciseADBTable" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="21"/><column index="2" value="71"/><column index="3" value="300"/><column index="4" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- 向 KeepExerciseA.sqlite3 数据库的 KeepExerciseADBTtable 表插入初始数据
+
+INSERT INTO KeepExerciseADBTable (aim_muscle, content, precaution) VALUES 
+('胸部', '俯卧撑：双手撑地，与肩同宽，身体保持一条直线，缓慢下降至胸部接近地面，然后推起。', '保持核心收紧，避免腰部下沉，呼吸要均匀，下降时吸气，推起时呼气。'),
+('胸部', '哑铃卧推：躺在平凳上，双手持哑铃，向上推起至手臂伸直，然后缓慢下降至胸部两侧。', '选择合适重量，避免过重导致受伤，动作要缓慢有控制，避免借力。'),
+('背部', '引体向上：双手握杠，与肩同宽，身体悬挂，然后向上拉起至下巴过杠，缓慢下降。', '握距要适中，避免借力摆动，下降时要控制速度，避免突然下落。'),
+('背部', '划船：单手握哑铃，另一手支撑在膝盖上，身体前倾，将哑铃拉向腹部，缓慢下降。', '保持背部挺直，避免弓背，动作要缓慢有控制，感受背部肌肉收缩。'),
+('腿部', '深蹲：双脚与肩同宽，脚尖微朝外，缓慢下蹲至大腿与地面平行，然后站起。', '保持膝盖与脚尖方向一致，避免膝盖内扣，背部要挺直，核心收紧。'),
+('腿部', '弓步蹲：一脚向前迈出一大步，身体下蹲至前后腿都成90度，然后站起换腿。', '前腿膝盖不要超过脚尖，后腿膝盖接近地面但不触地，保持身体稳定。'),
+('肩部', '哑铃推举：双手持哑铃，从肩膀位置向上推起至手臂伸直，缓慢下降。', '避免过度伸展肘关节，保持核心稳定，避免腰部反弓。'),
+('肩部', '侧平举：双手持哑铃，身体两侧，手臂微曲，向侧方抬起至与肩同高，缓慢下降。', '避免使用过大重量，动作要缓慢有控制，避免借力摆动。'),
+('手臂', '二头弯举：双手持哑铃，掌心朝前，手臂伸直，然后弯曲肘部将哑铃举向肩膀。', '避免借力摆动，保持肘部固定在身体两侧，动作要缓慢有控制。'),
+('手臂', '三头伸展：双手持哑铃，手臂向上伸直，然后弯曲肘部将哑铃下降至脑后，再伸直。', '保持肘部固定，避免过度伸展，选择合适重量避免受伤。'),
+('核心', '平板支撑：前臂撑地，与肩同宽，身体保持一条直线，保持姿势30-60秒。', '保持核心收紧，避免腰部下沉或臀部抬高，呼吸要均匀。'),
+('核心', '仰卧起坐：躺在地上，膝盖弯曲，双手抱头，腹部发力坐起，然后缓慢下降。', '避免用手拉扯头部，动作要缓慢有控制，感受腹部肌肉收缩。'),
+('有氧', '跑步机慢跑：设置适中速度，保持良好姿势，跑步20-30分钟。', '保持良好跑姿，避免过度疲劳，及时补充水分。'),
+('有氧', '动感单车：调整座椅高度，保持正确姿势，中等强度骑行30-45分钟。', '保持正确骑行姿势，避免过度疲劳，及时补充水分。'),
+('拉伸', '全身拉伸：从头到脚依次拉伸各个肌群，每个动作保持15-30秒。', '动作要缓慢柔和，避免过度拉伸，呼吸要深长均匀。');
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

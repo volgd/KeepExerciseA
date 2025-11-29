@@ -11,6 +11,8 @@ public class MenuNavigationServices : IMenuNavigationServices
         {
             MenuNavigationConstant.TodayView => ServicesLocator.Current.TodayViewModel,
             MenuNavigationConstant.QueryView => ServicesLocator.Current.QueryViewModel,
+            MenuNavigationConstant.TrainingPlanView => ServicesLocator.Current.TrainingPlanViewModel,
+            MenuNavigationConstant.FitnessAssessmentView => ServicesLocator.Current.FitnessAssessmentViewModel,
         };
         
         ServicesLocator.Current.MainViewModel.SetMenuAndContent(view,viewModel);

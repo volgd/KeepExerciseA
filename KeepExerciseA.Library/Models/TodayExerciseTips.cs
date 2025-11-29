@@ -2,12 +2,17 @@
 
 public class TodayExerciseTips
 {
-    public string Aimmuscle {get; set;} =string.Empty;
     
     public string Content {get; set;} =string.Empty;
     
     public string Warning {get; set;} =string.Empty;
+    
+    public string? snippet = "正在加载，请稍等片刻......";
+    
+    public string Source { get; set; } = string.Empty;
 
-    public string? snippet;
-    public string Snippet => snippet ?? snippet.Split("\n")[0].Replace("*#\n", " ");
+    public string Snippet =>
+                snippet?.Substring(0, Math.Min(snippet.Length, 200)) + "...";
+       
+    
 }

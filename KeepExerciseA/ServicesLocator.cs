@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
 using KeepExerciseA.Library.Services;
@@ -40,6 +41,12 @@ public class ServicesLocator
     public InitializationViewModel InitializationViewModel => _serviceProvider.GetRequiredService<InitializationViewModel>();
     public TodayViewModel TodayViewModel => _serviceProvider.GetRequiredService<TodayViewModel>();
     public QueryViewModel QueryViewModel => _serviceProvider.GetRequiredService<QueryViewModel>();
+    public FitnessAssessmentViewModel FitnessAssessmentViewModel =>
+        _serviceProvider.GetRequiredService<FitnessAssessmentViewModel>();
+    public BodyMapViewModel BodyMapViewModel => _serviceProvider.GetRequiredService<BodyMapViewModel>();
+    public AddTrainingPlanViewModel AddTrainingPlanViewModel => 
+        _serviceProvider.GetRequiredService<AddTrainingPlanViewModel>();
+    public TrainingPlanViewModel TrainingPlanViewModel => _serviceProvider.GetRequiredService<TrainingPlanViewModel>();
     public TodayDetailViewModel TodayDetailViewModel => _serviceProvider.GetRequiredService<TodayDetailViewModel>();
     public IMenuNavigationServices MenuNavigationServices => _serviceProvider.GetRequiredService<IMenuNavigationServices>();
     //TO
@@ -51,6 +58,7 @@ public class ServicesLocator
 
         serviceCollection.AddSingleton<IPreferenceStorage, FilePreferenceStorage>();
         serviceCollection.AddSingleton<IExerciseTipsStorage, ExerciseTipsStorage>();
+        serviceCollection.AddSingleton<ITrainingPlanStorage, TrainingPlanStorage>();
         serviceCollection.AddSingleton<ITodayExercisesTipServices, JinriTipServices>();
         serviceCollection.AddSingleton<IAlertServices, AlertServicess>();
 
@@ -65,7 +73,29 @@ public class ServicesLocator
         serviceCollection.AddSingleton<TodayViewModel>();
         serviceCollection.AddSingleton<TodayDetailViewModel>();
         serviceCollection.AddSingleton<QueryViewModel>();
+        serviceCollection.AddSingleton<TrainingPlanViewModel>();
+        serviceCollection.AddSingleton<AddTrainingPlanViewModel>();
+        serviceCollection.AddSingleton<FitnessAssessmentViewModel>();
+        serviceCollection.AddSingleton<BodyMapViewModel>(); 
         
         _serviceProvider = serviceCollection.BuildServiceProvider();
+        
+        // 异步初始化数据库
+        Task.Run(async () =>
+        {
+            try
+            {
+                var exerciseTipsStorage = _serviceProvider.GetRequiredService<IExerciseTipsStorage>();
+                await exerciseTipsStorage.InitializeAsync();
+                // 初始化新的训练计划数据库
+                var trainingPlanStorage = _serviceProvider.GetRequiredService<ITrainingPlanStorage>();
+                await trainingPlanStorage.InitializeAsync();
+            }
+            catch (Exception ex)
+            {
+                // 记录错误但不阻止应用启动
+                System.Diagnostics.Debug.WriteLine($"Database initialization failed: {ex.Message}");
+            }
+        });
     }
 }

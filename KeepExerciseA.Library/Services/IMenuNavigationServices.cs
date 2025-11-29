@@ -10,4 +10,8 @@ public static class MenuNavigationConstant
     public const string TodayView = nameof(TodayView);
     
     public const string QueryView = nameof(QueryView);
+    
+    public const string TrainingPlanView = nameof(TrainingPlanView);
+    
+    public const string FitnessAssessmentView = nameof(FitnessAssessmentView);
 }

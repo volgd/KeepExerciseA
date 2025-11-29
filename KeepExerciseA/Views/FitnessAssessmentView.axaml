@@ -1,0 +1,307 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:KeepExerciseA.Converters"
+             xmlns:viewModels="clr-namespace:KeepExerciseA.Library.ViewModels;assembly=KeepExerciseA.Library"
+             mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="700"
+             x:Class="KeepExerciseA.Views.FitnessAssessmentView">
+
+  <Design.DataContext>
+    <viewModels:FitnessAssessmentViewModel/>
+  </Design.DataContext>
+
+  <UserControl.Resources>
+    <converters:GenderToBooleanConverter x:Key="GenderToBooleanConverter"/>
+  </UserControl.Resources>
+  
+  <!-- 背景渐变 -->
+  <Grid RowDefinitions="Auto,*,Auto" Margin="0">
+    <Grid.Background>
+      <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+        <GradientStop Offset="0" Color="#F8FAFB"/>
+        <GradientStop Offset="1" Color="#F1F5F9"/>
+      </LinearGradientBrush>
+    </Grid.Background>
+    
+    <!-- 顶部装饰条 -->
+    <Border Grid.Row="0" Height="4" Background="{DynamicResource ThemeAccentBrush}"/>
+    
+    <!-- 主内容区域 -->
+    <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+      <StackPanel Spacing="24" Margin="32,24,32,16">
+        
+        <!-- 标题区域 -->
+        <Border Background="{DynamicResource ThemeCardBrush}"
+                BorderBrush="{DynamicResource ThemeBorderMidBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="20">
+          <StackPanel Spacing="16" HorizontalAlignment="Center">
+            <TextBlock Text="💪 健身评估系统" 
+                      Classes="h1" 
+                      FontWeight="Bold"
+                      Foreground="{DynamicResource ThemeForegroundBrush}"
+                      HorizontalAlignment="Center"/>
+            <TextBlock Text="输入您的身体数据，获取专业的健身评估报告" 
+                      Classes="h3" 
+                      Foreground="{DynamicResource ThemeForegroundBrush}"
+                      Opacity="0.8"
+                      HorizontalAlignment="Center"/>
+          </StackPanel>
+        </Border>
+        
+        <!-- 输入表单区域 -->
+        <Border Background="{DynamicResource ThemeCardBrush}"
+                BorderBrush="{DynamicResource ThemeBorderMidBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="20">
+          <StackPanel Spacing="20">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+              <TextBlock Text="👤" FontSize="20" VerticalAlignment="Center"/>
+              <TextBlock Text="基本信息" 
+                        FontSize="18"
+                        FontWeight="SemiBold"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"/>
+            </StackPanel>
+            
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" 
+                  ColumnSpacing="20" RowSpacing="16">
+              
+              <!-- 性别选择 -->
+              <TextBlock Text="性别" 
+                        Grid.Row="0" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <Border Grid.Row="0" Grid.Column="1" 
+                      Background="{DynamicResource ThemeControlLowBrush}" 
+                      CornerRadius="8" 
+                      Padding="12,8">
+                <StackPanel Orientation="Horizontal" Spacing="20">
+                  <RadioButton Content="👨 男" 
+                               IsChecked="{Binding Gender, 
+                                         Converter={StaticResource GenderToBooleanConverter}, 
+                                         ConverterParameter='男'}"
+                               FontSize="14"/>
+                  <RadioButton Content="👩 女" 
+                               IsChecked="{Binding Gender, 
+                                         Converter={StaticResource GenderToBooleanConverter}, 
+                                         ConverterParameter='女'}"
+                               FontSize="14"/>
+                </StackPanel>
+              </Border>
+
+              <!-- 身高 -->
+              <TextBlock Text="身高 (cm)" 
+                        Grid.Row="1" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding Height}" 
+                       Grid.Row="1" Grid.Column="1" 
+                       Watermark="例如: 175"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+
+              <!-- 体重 -->
+              <TextBlock Text="体重 (kg)" 
+                        Grid.Row="2" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding Weight}" 
+                       Grid.Row="2" Grid.Column="1" 
+                       Watermark="例如: 70.5"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+
+              <!-- 体脂率 -->
+              <TextBlock Text="体脂率 (%)" 
+                        Grid.Row="3" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding BodyFatPercentage}" 
+                       Grid.Row="3" Grid.Column="1" 
+                       Watermark="例如: 18.0"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+            </Grid>
+          </StackPanel>
+        </Border>
+        
+        <!-- 围度信息 -->
+        <Border Background="{DynamicResource ThemeCardBrush}"
+                BorderBrush="{DynamicResource ThemeBorderMidBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="20">
+          <StackPanel Spacing="20">
+            <StackPanel Orientation="Horizontal" Spacing="8">
+              <TextBlock Text="📏" FontSize="20" VerticalAlignment="Center"/>
+              <TextBlock Text="身体围度" 
+                        FontSize="18"
+                        FontWeight="SemiBold"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"/>
+            </StackPanel>
+            
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" 
+                  ColumnSpacing="20" RowSpacing="16">
+              
+              <!-- 胸围 -->
+              <TextBlock Text="胸围 (cm)" 
+                        Grid.Row="0" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding Chest}" 
+                       Grid.Row="0" Grid.Column="1" 
+                       Watermark="例如: 95"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+
+              <!-- 腰围 -->
+              <TextBlock Text="腰围 (cm)" 
+                        Grid.Row="1" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding Waist}" 
+                       Grid.Row="1" Grid.Column="1" 
+                       Watermark="例如: 80"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+
+              <!-- 臀围 -->
+              <TextBlock Text="臀围 (cm)" 
+                        Grid.Row="2" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding Hips}" 
+                       Grid.Row="2" Grid.Column="1" 
+                       Watermark="例如: 95"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+
+              <!-- 臂围 -->
+              <TextBlock Text="臂围 (cm)" 
+                        Grid.Row="3" Grid.Column="0" 
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        VerticalAlignment="Center"/>
+              <TextBox Text="{Binding Arm}" 
+                       Grid.Row="3" Grid.Column="1" 
+                       Watermark="例如: 30"
+                       Height="40"
+                       Padding="12,8"
+                       CornerRadius="8"
+                       BorderThickness="1"
+                       FontSize="14"/>
+            </Grid>
+          </StackPanel>
+        </Border>
+        
+        <!-- 生成按钮 -->
+        <Button Content="📋 生成评估报告" 
+                Command="{Binding GenerateReportCommand}" 
+                Classes="accent"
+                Height="44"
+                Padding="24,0"
+                CornerRadius="22"
+                FontWeight="SemiBold"
+                FontSize="16"
+                HorizontalAlignment="Center"/>
+        
+        <!-- 报告显示区域 -->
+        <Border Background="{DynamicResource ThemeCardBrush}"
+                BorderBrush="{DynamicResource ThemeBorderMidBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="20"
+                MinHeight="300">
+          <Grid RowDefinitions="Auto,*">
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Spacing="8" Margin="0,0,0,16">
+              <TextBlock Text="📄" FontSize="20" VerticalAlignment="Center"/>
+              <TextBlock Text="评估报告" 
+                        FontSize="18"
+                        FontWeight="SemiBold"
+                        Foreground="{DynamicResource ThemeForegroundBrush}"/>
+            </StackPanel>
+            
+            <Border Grid.Row="1" 
+                    Background="{DynamicResource ThemeControlLowBrush}" 
+                    CornerRadius="8" 
+                    Padding="16">
+              <ScrollViewer HorizontalScrollBarVisibility="Disabled" 
+                            VerticalScrollBarVisibility="Auto">
+                <TextBox Text="{Binding ReportText}" 
+                         IsReadOnly="True"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True"
+                         FontFamily="Consolas,monospace"
+                         FontSize="13"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Foreground="{DynamicResource ThemeForegroundBrush}"/>
+              </ScrollViewer>
+            </Border>
+          </Grid>
+        </Border>
+        
+        <!-- 底部信息 -->
+        <Border Background="{DynamicResource ThemeControlLowBrush}"
+                BorderBrush="{DynamicResource ThemeBorderMidBrush}"
+                BorderThickness="1"
+                CornerRadius="12"
+                Padding="20">
+          <StackPanel Spacing="8" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Spacing="8" HorizontalAlignment="Center">
+              <TextBlock Text="ℹ️" FontSize="16" VerticalAlignment="Center"/>
+              <TextBlock Text="本报告仅供参考，不作为医疗诊断依据" 
+                        Classes="caption" 
+                        Foreground="{DynamicResource ThemeForegroundBrush}"
+                        Opacity="0.8"/>
+            </StackPanel>
+            <TextBlock Text="建议定期体检并咨询专业健身教练" 
+                      Classes="caption" 
+                      Foreground="{DynamicResource ThemeForegroundBrush}"
+                      Opacity="0.6"
+                      HorizontalAlignment="Center"/>
+          </StackPanel>
+        </Border>
+      </StackPanel>
+    </ScrollViewer>
+    
+    <!-- 底部装饰条 -->
+    <Border Grid.Row="2" Height="4" Background="{DynamicResource ThemeAccentBrush}"/>
+  </Grid>
+</UserControl>

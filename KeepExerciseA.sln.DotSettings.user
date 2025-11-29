@@ -4,5 +4,8 @@
   &lt;Or&gt;&#xD;
     &lt;ProjectFile&gt;4FAFE413-87D0-4813-8FFD-630BEA102F24/d:ViewModels/f:ResultViewModelTest.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;4FAFE413-87D0-4813-8FFD-630BEA102F24/d:Services/f:ExerciseTipsStorageTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4FAFE413-87D0-4813-8FFD-630BEA102F24/d:Services/f:JinriTipServicesTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4FAFE413-87D0-4813-8FFD-630BEA102F24/d:ViewModels/f:TrainingPlanViewModelTest.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;4FAFE413-87D0-4813-8FFD-630BEA102F24/d:Services/f:TrainingPlanStorageTest.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

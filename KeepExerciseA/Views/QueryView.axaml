@@ -5,5 +5,67 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="KeepExerciseA.Views.QueryView"
              DataContext="{Binding QueryViewModel, Source={StaticResource ServicesLocator}}">
-    Welcome to Avalonia!
+
+    <Border Padding="24">
+        <!-- 整个内容区域放进 ScrollViewer 里，就可以上下滚动 -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Spacing="12">
+                <!-- 标题 -->
+                <TextBlock Text="锻炼建议搜索"
+                           FontSize="24"
+                           FontWeight="Bold"/>
+
+                <!-- 搜索输入 + 按钮 -->
+                <StackPanel Orientation="Horizontal">
+                    <TextBox Width="220"
+                             Text="{Binding SearchText}"
+                             Watermark="输入想锻炼的部位，例如 肱二头肌"/>
+
+                    <Button Content="搜索"
+                            Margin="8,0,0,0"
+                            Command="{Binding SearchCommand}" />
+
+                    <!-- 跳转人体图 -->
+                    <Button Content="人体图"
+                            Margin="8,0,0,0"
+                            Command="{Binding BodyMapCommand}" />
+                </StackPanel>
+
+
+
+                <!-- 状态提示 -->
+                <TextBlock Text="{Binding Status}"
+                           FontSize="12"
+                           Foreground="Gray"
+                           Margin="0,4,0,0"/>
+
+                <!-- 搜索结果列表（内部自带虚拟化和滚动） -->
+                <ListBox ItemsSource="{Binding Results}"
+                         Margin="0,8,0,0">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="0,4,0,4"
+                                    Padding="8"
+                                    CornerRadius="4">
+                                <StackPanel Spacing="4">
+                                    <TextBlock Text="{Binding aimmuscle}"
+                                               FontSize="16"
+                                               FontWeight="Bold"/>
+
+                                    <TextBlock Text="{Binding content}"
+                                               TextWrapping="Wrap"
+                                               FontSize="13"/>
+
+                                    <TextBlock Text="{Binding precautions}"
+                                               TextWrapping="Wrap"
+                                               FontSize="11"
+                                               Foreground="Gray"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+    </Border>
 </UserControl>

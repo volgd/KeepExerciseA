@@ -29,6 +29,15 @@ build_property.EnableCodeStyleSeverity =
 [E:/RiderProject/KeepExerciseA/KeepExerciseA/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/AddTrainingPlanView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/BodyMapView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/FitnessAssessmentView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/InitializationView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
@@ -45,4 +54,7 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/TodayView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[E:/RiderProject/KeepExerciseA/KeepExerciseA/Views/TrainingPlanView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

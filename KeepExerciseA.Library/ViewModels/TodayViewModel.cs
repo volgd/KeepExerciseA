@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using KeepExerciseA.Library.Models;
 using KeepExerciseA.Library.Services;
+using KeepExerciseA.Library.Models;
 
 namespace KeepExerciseA.Library.ViewModels;
 
@@ -9,6 +10,7 @@ public class TodayViewModel : ViewModelBase
 {
     private readonly IContentNavigationSecvices _contentNavigationSecvices;
     private readonly ITodayExercisesTipServices _todayExercisesTipServices;
+    
 
     public TodayViewModel(IContentNavigationSecvices contentNavigationSecvices,
         ITodayExercisesTipServices todayExercisesTipServices)
@@ -33,12 +35,17 @@ public class TodayViewModel : ViewModelBase
 
     public async Task OnInitializedAsync()
     {
-        TodayExerciseTips = await _todayExercisesTipServices.GetTodayExerciseTipsAsync();
+        Task.Run(async () => {
+            
+            await Task.Delay(1000);
+            TodayExerciseTips = await _todayExercisesTipServices.GetTodayExerciseTipsAsync();
+
+        });
     }
 
     public void ShowDetail()
     {
-        _contentNavigationSecvices.NavigateTo(ContentNavigationConstant.TodayDetail);
+        _contentNavigationSecvices.NavigateTo(ContentNavigationConstant.TodayDetail,TodayExerciseTips);
     }
     
 }
